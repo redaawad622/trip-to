@@ -1,50 +1,40 @@
 <template>
-  <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+	<v-app>
+		<v-main>
+			<router-view />
+		</v-main>
+		<v-bottom-navigation v-model="value" shift background-color="#fff">
+			<v-btn>
+				<span>Video</span>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+				<v-icon>mdi-television-play</v-icon>
+			</v-btn>
 
-      <v-spacer></v-spacer>
+			<v-btn>
+				<span>Music</span>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
+				<v-icon>mdi-music-note</v-icon>
+			</v-btn>
 
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
+			<v-btn>
+				<span>Book</span>
+
+				<v-icon>mdi-book</v-icon>
+			</v-btn>
+
+			<v-btn>
+				<span>Image</span>
+
+				<v-icon>mdi-image</v-icon>
+			</v-btn>
+		</v-bottom-navigation>
+	</v-app>
 </template>
 
 <script>
 export default {
-  name: "App",
+	name: 'App',
 
-  data: () => ({
-    //
-  }),
+	data: () => ({ value: 0 }),
 };
 </script>
