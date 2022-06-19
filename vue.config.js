@@ -13,4 +13,12 @@ module.exports = {
       enableBridge: true,
     },
   },
+
+  pwa: {
+    themeColor: '#1b3065',
+    appleMobileWebAppStatusBarStyle: '#1b3065',
+    manifestOptions: {
+      background_color: '#fff'
+    }
+  }
 };

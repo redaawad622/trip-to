@@ -15,13 +15,28 @@
   "devDependencies": {
     "cordova-android": "^10.1.2",
     "cordova-electron": "^3.1.0",
-    "cordova-ios": "^6.2.0"
+    "cordova-ios": "^6.2.0",
+    "cordova-browser": "^5.0.3",
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-ionic-webview": "^1.2.0",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3"
   },
   "cordova": {
     "platforms": [
       "android",
       "ios",
-      "electron"
-    ]
-  }
+      "electron",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {}
+    }
+  },
+  "dependencies": {}
 }

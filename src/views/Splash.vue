@@ -4,11 +4,11 @@
       <splash-content></splash-content>
     </div>
     <v-card
-      class="pa-10"
-      :img="require('../assets/splash.jpg')"
+      class="pa-10 splashCard"
       min-height="100%"
       height="100%"
       style="flex: 1"
+      color="primary darken-1"
       flat
       tile>
       <splash-content v-if="!$vuetify.breakpoint.smAndUp"></splash-content>
@@ -23,13 +23,24 @@
   };
 </script>
 
-<style>
-  .card__title-shadow {
-    text-shadow: 0px 0px 20px #5bcef9;
-  }
-  .over{
-    background: #5bcef9;
-    width: 100%;
-    height: 100%;
+<style lang="scss" scoped>
+  .splashCard {
+    z-index: 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../assets/splash2.webp') center center / cover no-repeat;
+      opacity: 0.85;
+      // background: url('../assets/splash.jpg') center center / cover no-repeat;
+      // opacity: 0.7;
+      z-index: -1;
+    }
   }
 </style>

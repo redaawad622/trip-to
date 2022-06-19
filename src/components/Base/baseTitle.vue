@@ -1,5 +1,5 @@
 <template>
-  <h2>
+  <h2 class="text-capitalize">
     <slot></slot>
   </h2>
 </template>
