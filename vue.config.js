@@ -19,6 +19,7 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: '#1b3065',
     manifestOptions: {
       background_color: '#fff'
-    }
+    },
+    name: 'Trip To'
   }
 };
