@@ -1,0 +1,6 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.v-item-group.v-bottom-navigation .v-btn.v-btn--active::before {
+  background: none;
+}
