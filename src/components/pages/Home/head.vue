@@ -10,11 +10,12 @@
             ><v-icon color="primary">mdi-phone</v-icon></v-btn
           >
           <v-btn
+            to="/signup"
             rounded
             color="primary"
             large
             :elevation="0"
-            class="text-capitalize"
+            class="text-capitalize text-doc text-decoration-none"
             v-text="$vuetify.lang.t(`$vuetify.create account`)"></v-btn>
           <v-btn fab elevation="0" small
             ><v-icon color="primary">mdi-whatsapp</v-icon></v-btn

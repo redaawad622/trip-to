@@ -7,7 +7,7 @@
     color="primary"
     background-color="#fff"
     class="elevation-0"
-    v-if="$route.name !== 'Splash'">
+    v-if="!pages.includes($route.name)">
     <v-btn
       v-for="(item, k) in list"
       :key="k + item.title"
@@ -28,6 +28,7 @@
   export default {
     data: () => ({
       value: 0,
+      pages: ['Splash', 'Login', 'SignUp'],
       list: [
         { title: 'home', icon: 'mdi-home ', to: '/home' },
         {
