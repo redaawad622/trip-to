@@ -1,0 +1,22 @@
+.v-tabs.circle {
+  .v-slide-group__prev,
+  .v-slide-group__next {
+    display: none !important;
+  }
+  .v-tab {
+    text-transform: capitalize;
+    height: 36px;
+    padding: 0 24px;
+    overflow: hidden;
+    color: #000 !important;
+
+    &::before {
+      background-color: transparent;
+    }
+    &.v-tab--active {
+      border: 1.5px solid #ddd;
+      border-radius: 100px;
+      font-weight: 700;
+    }
+  }
+}

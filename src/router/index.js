@@ -4,6 +4,7 @@ import Splash from '../views/Splash.vue';
 import Home from '../views/Home.vue';
 import Login from '../views/Login.vue';
 import SignUp from '../views/SignUp.vue';
+import Room from '../views/Room.vue';
 
 Vue.use(VueRouter);
 
@@ -28,8 +29,13 @@ const routes = [
     name: 'SignUp',
     component: SignUp,
   },
+  {
+    path: '/room',
+    name: 'Room',
+    component: Room,
+    alias: '/offers',
+  },
 ];
-
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,

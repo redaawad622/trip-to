@@ -1,5 +1,10 @@
 <template>
-  <v-card flat tile :img="require('../../assets/bc.png')" elevation="0" color="primary darken-1" >
+  <v-card
+    flat
+    tile
+    :img="require('../../assets/bc.png')"
+    elevation="0"
+    color="primary darken-1">
     <v-toolbar v-if="!hideTop" tile flat color="transparent">
       <slot name="header"></slot>
     </v-toolbar>

@@ -28,7 +28,7 @@
   export default {
     data: () => ({
       value: 0,
-      pages: ['Splash', 'Login', 'SignUp'],
+      pages: ['Splash', 'Login', 'SignUp', 'Room'],
       list: [
         { title: 'home', icon: 'mdi-home ', to: '/home' },
         {
