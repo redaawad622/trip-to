@@ -265,26 +265,6 @@
               color: '#912115',
               src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
             },
-            {
-              color: '#969175',
-              src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
-            },
-            {
-              color: '#1F7087',
-              src: 'https://atmosphereresorts.com/wp-content/uploads/2020/03/Main-pool-and-beach-at-Atmosphere-Resorts-Spa.jpg',
-            },
-            {
-              color: '#952175',
-              src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/cd/ee/33/telatiye-resort-hotel.jpg?w=1000&h=600&s=1',
-            },
-            {
-              color: '#912115',
-              src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
-            },
-            {
-              color: '#969175',
-              src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
-            },
           ],
         },
       };

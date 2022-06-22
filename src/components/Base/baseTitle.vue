@@ -1,7 +1,7 @@
 <template>
-  <h2 class="text-capitalize">
+  <h3 class="text-capitalize">
     <slot></slot>
-  </h2>
+  </h3>
 </template>
 
 <script>

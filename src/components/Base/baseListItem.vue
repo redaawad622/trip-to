@@ -29,7 +29,7 @@
         </v-card-actions>
       </div>
 
-      <v-avatar class="ma-3" size="125" tile>
+      <v-avatar class="ma-3" size="125" tile @click="$router.push('/room')">
         <v-img :src="item.src" />
       </v-avatar>
     </div>

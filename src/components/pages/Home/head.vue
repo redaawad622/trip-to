@@ -6,7 +6,7 @@
           class="white--text title text-capitalize font-weight-bold"
           v-text="$vuetify.lang.t(`$vuetify.discover amazing things`)"></p>
         <div class="d-flex justify-space-between px-4 align-center">
-          <v-btn fab elevation="0" small
+          <v-btn fab elevation="0" small href="tel:01097171325"
             ><v-icon color="primary">mdi-phone</v-icon></v-btn
           >
           <v-btn
@@ -17,7 +17,11 @@
             :elevation="0"
             class="text-capitalize text-doc text-decoration-none"
             v-text="$vuetify.lang.t(`$vuetify.create account`)"></v-btn>
-          <v-btn fab elevation="0" small
+          <v-btn
+            href="https://wa.me/01097171325?text=hi"
+            fab
+            elevation="0"
+            small
             ><v-icon color="primary">mdi-whatsapp</v-icon></v-btn
           >
         </div>
