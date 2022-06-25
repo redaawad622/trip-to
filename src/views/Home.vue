@@ -1,7 +1,7 @@
 <template>
   <v-sheet class="home">
-    <homeTop v-if="false"></homeTop>
-    <homeTop2></homeTop2>
+    <homeTop></homeTop>
+    <homeTop2 v-if="false"></homeTop2>
     <offers-list></offers-list>
     <most-rooms-list></most-rooms-list>
   </v-sheet>

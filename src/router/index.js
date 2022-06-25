@@ -5,6 +5,7 @@ import Home from '../views/Home.vue';
 import Login from '../views/Login.vue';
 import SignUp from '../views/SignUp.vue';
 import Room from '../views/Room.vue';
+import Resorts from '../views/Resorts.vue';
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const routes = [
     path: '/signup',
     name: 'SignUp',
     component: SignUp,
+  },
+  {
+    path: '/resorts',
+    name: 'Resorts',
+    component: Resorts,
   },
   {
     path: '/room',
